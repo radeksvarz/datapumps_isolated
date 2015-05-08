@@ -1,0 +1,14 @@
+language: python
+python:
+  - "2.7"
+install:
+    - pip install nose
+    - pip install coveralls
+script:
+    - python setup.py build
+    - python setup.py sdist
+    - nosetests -v --with-coverage --cover-package=datapumps_isolated --cover-tests --cover-erase --with-doctest
+after_success:
+    - coveralls
+notifications:
+    email: false
