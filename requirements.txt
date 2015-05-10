@@ -4,3 +4,4 @@ tox
 flake8
 setuptools>=15
 wheel
+pypandoc

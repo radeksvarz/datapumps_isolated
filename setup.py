@@ -1,6 +1,15 @@
 # coding=utf-8
 
-from setuptools import setup
+from setuptools import setup, find_packages
+
+try:
+    from pypandoc import convert
+
+    read_md = lambda f: convert(f, 'rst')
+    # http://stackoverflow.com/a/23265673/752142
+except ImportError:
+    print("warning: pypandoc module not found, could not convert Markdown to RST")
+    read_md = lambda f: open(f, 'r').read()
 
 # https://hynek.me/articles/sharing-your-labor-of-love-pypi-quick-and-dirty/
 setup(
@@ -18,7 +27,7 @@ setup(
     #
     # $ fab build
     # ########################################################################
-    long_description=('TODO some text'),
+    long_description=read_md('README.md'),
 
     url='https://github.com/radeksvarz/datapumps_isolated',
     license='MIT',
@@ -29,7 +38,7 @@ setup(
     # installed (it’s still part of the source distribution)
     # since that would wreak havoc.
     # find_packages(exclude=['tests*'])
-    packages=['dataviso_sequencer'],
+    packages=find_packages(),
 
 
     install_requires=[],

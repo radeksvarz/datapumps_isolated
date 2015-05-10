@@ -1,0 +1,6 @@
+include *.md
+include *.rst
+include README.md LICENSE
+recursive-include docs *.md
+recursive-exclude example *
+recursive-exclude tests *
