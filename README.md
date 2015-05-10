@@ -4,6 +4,8 @@ Isolated library for datapumps creation and testing.
 
 ## Installation ##
 
+**This package is NOT published on PyPI.**
+
 ```bash
 pip install --upgrade git+git://github.com/radeksvarz/datapumps_isolated.git#egg=dataviso_sequencer
 ```
