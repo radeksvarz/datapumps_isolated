@@ -4,7 +4,7 @@ from setuptools import setup
 
 # https://hynek.me/articles/sharing-your-labor-of-love-pypi-quick-and-dirty/
 setup(
-    name='datapumps_isolated',
+    name='dataviso_sequencer',
     version='0.0.1',
     description='TODO Add description',
 
@@ -29,7 +29,7 @@ setup(
     # installed (it’s still part of the source distribution)
     # since that would wreak havoc.
     # find_packages(exclude=['tests*'])
-    packages=['datapumps_isolated'],
+    packages=['dataviso_sequencer'],
 
 
     install_requires=[],

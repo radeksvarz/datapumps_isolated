@@ -1,7 +1,7 @@
 # http://nedbatchelder.com/code/coverage/config.html
 
 [report]
-include = datapumps_isolated/*
+include = dataviso_sequencer/*
 
 exclude_lines =
     # Don't complain if non-runnable code isn't run:

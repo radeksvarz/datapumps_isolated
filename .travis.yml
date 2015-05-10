@@ -7,7 +7,7 @@ install:
 script:
     - python setup.py build
     - python setup.py sdist
-    - nosetests -v --with-coverage --cover-package=datapumps_isolated --cover-tests --cover-erase --with-doctest
+    - nosetests -v --with-coverage --cover-package=dataviso_sequencer --cover-tests --cover-erase --with-doctest
 after_success:
     - coveralls
 notifications:
