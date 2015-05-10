@@ -49,8 +49,10 @@ class MyFirstSequence(Sequence):
 3) Register your Sequence (see `example/run.py`):
 
 ```python
+from vendor_sequences.example import MyFirstSequence
+
 SEQUENCE_REGISTER = (
-	MyFirstSequence
+	MyFirstSequence,
 )
 
 ```

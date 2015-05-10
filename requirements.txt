@@ -1,4 +1,6 @@
 coverage
 nose
 tox
-requests[security]
+flake8
+setuptools>=15
+wheel

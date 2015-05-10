@@ -22,7 +22,6 @@ class AcmeTracker(Step):
             status_text_exit = "no new data"
             return StepStateControlCodes.EXIT, status_text_exit
 
-
     def get_output(self):
         pass
 
@@ -52,7 +51,6 @@ class AcmeSequence(Sequence):
 
     def get_flow(self):
         return [AcmeTracker(), AcmeDownloader()]
-
 
     def run(self):
         previous_data = None
