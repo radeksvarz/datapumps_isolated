@@ -44,6 +44,24 @@ class MyFirstSequence(Sequence):
         # TODO
 ```
 
+3) Register your Sequence (see `example/run.py`):
+
+```python
+SEQUENCE_REGISTER = (
+	MyFirstSequence
+)
+
+```
+
+4) Test (run) your Sequence:
+
+```bash
+cd your/working/directory/...
+cd example/
+python run.py
+Starting:  <class 'vendor_sequences.acme.MyFirstSequence'>
+```
+
 
 ## Package tests ##
 
