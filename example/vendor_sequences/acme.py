@@ -12,7 +12,7 @@ from dataviso_sequencer.types.types import StepStateControlCodes
 
 
 class AcmeTracker(Step):
-    def run(self, previous_step_data=None, historical_step_execution=None):
+    def run(self, previous_step_data=None, **kwargs):
         r = requests.get('http://www.example.com')
 
         if r.headers["last-modified"] != "previous tracking date":
@@ -50,12 +50,14 @@ class AcmeSequence(Sequence):
     def __init__(self):
         super(AcmeSequence, self).__init__()
 
-        self.sequence = [AcmeTracker(), AcmeDownloader()]
+    def get_flow(self):
+        return [AcmeTracker(), AcmeDownloader()]
+
 
     def run(self):
         previous_data = None
 
-        for step in self.sequence:
+        for step in self.get_flow():
             this_data = step.run(previous_step_data=previous_data)
 
             previous_data = this_data
