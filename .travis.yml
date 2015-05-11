@@ -4,6 +4,7 @@ python:
 install:
     - pip install nose
     - pip install coveralls
+    - pip install setuptools
 script:
     - python setup.py build
     - python setup.py sdist
