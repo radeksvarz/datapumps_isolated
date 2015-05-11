@@ -4,6 +4,7 @@ Isolated library for datapumps creation and testing.
 
 [![Requirements Status](https://requires.io/github/radeksvarz/datapumps_isolated/requirements.svg?branch=master)](https://requires.io/github/radeksvarz/datapumps_isolated/requirements/?branch=master)
 [![Coverage Status](https://coveralls.io/repos/radeksvarz/datapumps_isolated/badge.svg)](https://coveralls.io/r/radeksvarz/datapumps_isolated)
+[![Build Status](https://travis-ci.org/radeksvarz/datapumps_isolated.svg?branch=master)](https://travis-ci.org/radeksvarz/datapumps_isolated)
 
 ## Installation ##
 
