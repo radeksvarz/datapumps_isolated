@@ -1,6 +1,6 @@
 # coding=utf-8
 
-from setuptools import setup, find_packages
+from setuptools import setup
 
 try:
     from pypandoc import convert
@@ -38,7 +38,12 @@ setup(
     # installed (it’s still part of the source distribution)
     # since that would wreak havoc.
     # find_packages(exclude=['tests*'])
-    packages=find_packages(),
+    packages=[
+        "dataviso_sequencer",
+        "dataviso_sequencer.lib",
+        "dataviso_sequencer.lib_impl",
+        "dataviso_sequencer.types"
+    ],
 
 
     install_requires=[],
