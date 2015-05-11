@@ -45,7 +45,6 @@ setup(
         "dataviso_sequencer.types"
     ],
 
-
     install_requires=[],
     include_package_data=True,
     classifiers=[
