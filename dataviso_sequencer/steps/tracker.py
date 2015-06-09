@@ -57,6 +57,8 @@ class URLHeadersTracker(Tracker):
 
     available_methods = ["HEAD", "GET"]
 
+    timeout = 5 # in seconds
+
     def __init__(self):
         super(URLHeadersTracker, self).__init__()
 
@@ -90,9 +92,21 @@ class URLHeadersTracker(Tracker):
 
         for method in self.available_methods:
             if method == "HEAD":
-                head_response = requests.head(url, headers=headers, allow_redirects=True, verify=True)
+                head_response = requests.head(
+                    url,
+                    headers=headers,
+                    allow_redirects=True,
+                    verify=True,
+                    timeout=self.timeout
+                )
             elif method == "GET":
-                head_response = requests.get(url, headers=headers, allow_redirects=True, verify=True)
+                head_response = requests.get(
+                    url,
+                    headers=headers,
+                    allow_redirects=True,
+                    verify=True,
+                    timeout=self.timeout
+                )
             else:
                 raise ValueError("HTTP method `{0}` is not supported.".format(method))
 

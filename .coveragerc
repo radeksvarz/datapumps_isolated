@@ -2,6 +2,7 @@
 
 [report]
 include = dataviso_sequencer/*
+omit = dataviso_sequencer/example_project/*
 
 exclude_lines =
     # Don't complain if non-runnable code isn't run:
