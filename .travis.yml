@@ -5,6 +5,12 @@ install:
     - pip install nose
     - pip install coveralls
     - pip install setuptools
+    - pip install flake8
+    - pip install Django>=1.8.1,<1.9
+    - pip install arrow
+    - pip install tldextract
+    - pip install requests
+    - pip install -e git+git://github.com/illagrenan/misc-filename-utils.git#egg=misc-filename-utils
 script:
     - python setup.py build
     - python setup.py sdist
