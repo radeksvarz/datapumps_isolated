@@ -42,6 +42,7 @@ setup(
         "dataviso_sequencer",
         "dataviso_sequencer.lib",
         "dataviso_sequencer.lib_impl",
+        "dataviso_sequencer.steps",
         "dataviso_sequencer.types"
     ],
 
