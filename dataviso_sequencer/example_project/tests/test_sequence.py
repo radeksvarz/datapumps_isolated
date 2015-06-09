@@ -9,10 +9,10 @@ import collections
 
 from django.test import TestCase
 
-from ..exceptions import UnconfiguredError
-from ..lib.core import Sequence, Step
-from ..lib.mocks import MockedSequenceExecution
-from ..types.types import IsolationLevel
+from dataviso_sequencer.exceptions import UnconfiguredError
+from dataviso_sequencer.lib.core import Step, Sequence
+from dataviso_sequencer.lib.mocks import MockedSequenceExecution
+from dataviso_sequencer.types.types import IsolationLevel
 
 
 class MockedSequence(Sequence):

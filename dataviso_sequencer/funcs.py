@@ -36,7 +36,7 @@ def str_to_arrow(str_datetime, return_iso=False):
     Usage:
 
         >>> str_to_arrow("1.4.2015")
-        >>> <Arrow [2015-01-04T00:00:00+00:00]>
+        <Arrow [2015-01-04T00:00:00+00:00]>
 
     :param str_datetime: Date(time)-like string.
     :param return_iso: If True and if is conversion successful, ISO format of date(time) will be returned.

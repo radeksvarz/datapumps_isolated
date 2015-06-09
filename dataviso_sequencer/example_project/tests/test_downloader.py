@@ -7,7 +7,7 @@ from __future__ import absolute_import
 
 from django.test import TestCase
 
-from ..steps.downloader import Downloader
+from dataviso_sequencer.steps.downloader import Downloader
 
 
 class DownloaderTestCase(TestCase):
