@@ -45,7 +45,10 @@ setup(
         "dataviso_sequencer.types"
     ],
 
-    install_requires=[],
+    install_requires=['Django>=1.8.1,<1.9', 'arrow', 'tldextract', 'requests', 'misc-filename-utils'],
+    dependency_links=[
+        'git+git://github.com/illagrenan/misc-filename-utils.git#egg=misc-filename-utils',
+    ],
     include_package_data=True,
     classifiers=[
         'Programming Language :: Python :: 2.7',

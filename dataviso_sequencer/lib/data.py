@@ -148,6 +148,7 @@ class StepExecution(LoggableProcessItem, StatusItem):
         """
         raise NotImplementedError("Method `get_storage` is not implemented.")
 
+
     @abc.abstractmethod
     def get_qa_logger(self):
         """
@@ -197,6 +198,7 @@ class Logger(object):
 
     def text(self, text):
         self.add_line(text)
+
 
     @abc.abstractmethod
     def save(self, *args, **kwargs):
