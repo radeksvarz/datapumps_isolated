@@ -7,7 +7,7 @@ from __future__ import absolute_import
 
 from django.test import TestCase
 
-from ..lib.register import fully_qualified_path_to_module_and_class
+from dataviso_sequencer.lib.register import fully_qualified_path_to_module_and_class
 
 
 class RegisterTestCase(TestCase):
