@@ -1,3 +1,6 @@
++------------------------------------------+
+|           Package requirements           |
++------------------------------------------+
 coverage
 nose
 tox
@@ -10,3 +13,8 @@ requests>=2.6.0,<3.0
 tldextract
 arrow
 -e git+git://github.com/illagrenan/misc-filename-utils.git#egg=misc-filename-utils
+
++------------------------------------------+
+|     Package development requirements     |
++------------------------------------------+
+fabric
