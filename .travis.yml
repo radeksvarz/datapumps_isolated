@@ -11,6 +11,7 @@ install:
     - pip install arrow
     - pip install tldextract
     - pip install requests
+    - pip install fabric
     - pip install -e git+git://github.com/illagrenan/misc-filename-utils.git#egg=misc-filename-utils
 script:
     - python setup.py build
