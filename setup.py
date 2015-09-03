@@ -4,6 +4,7 @@ from setuptools import setup
 
 try:
     from pypandoc import convert
+    import pandoc
 
     read_md = lambda f: convert(f, 'rst')
     # http://stackoverflow.com/a/23265673/752142
